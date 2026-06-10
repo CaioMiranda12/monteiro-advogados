@@ -1,3 +1,5 @@
+import { FadeIn } from "@/components/ui/FadeIn"
+
 const depoimentos = [
   {
     id: 1,
@@ -34,8 +36,10 @@ export function Depoimentos() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border">
-          {depoimentos.map((item) => (
-            <DepoimentoCard key={item.id} depoimento={item} />
+          {depoimentos.map((item, index) => (
+            <FadeIn key={item.id} delay={index * 0.15}>
+              <DepoimentoCard depoimento={item} />
+            </FadeIn>
           ))}
         </div>
 

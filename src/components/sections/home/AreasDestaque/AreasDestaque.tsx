@@ -1,31 +1,36 @@
 import Link from 'next/link'
 import { areas } from '@/content/areas'
+import { FadeIn } from '@/components/ui/FadeIn/FadeIn'
 
 export function AreasDestaque() {
   return (
     <section className="bg-white py-[96px]">
       <div className="max-w-[80rem] mx-auto px-6">
 
-        <div className="mb-16">
-          <p className="text-xs font-semibold uppercase tracking-widest text-gold mb-4">
-            O que fazemos
-          </p>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-            <h2 className="font-serif text-4xl md:text-5xl font-normal text-navy leading-tight max-w-[32rem]">
-              Áreas de Atuação
-            </h2>
-            <Link
-              href="/areas"
-              className="text-sm font-medium text-gray hover:text-navy border-b border-border hover:border-navy transition-colors pb-0.5 self-start md:self-auto"
-            >
-              Ver todas as áreas
-            </Link>
+        <FadeIn>
+          <div className="mb-16">
+            <p className="text-xs font-semibold uppercase tracking-widest text-gold mb-4">
+              O que fazemos
+            </p>
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+              <h2 className="font-serif text-4xl md:text-5xl font-normal text-navy leading-tight max-w-[32rem]">
+                Áreas de Atuação
+              </h2>
+              <Link
+                href="/areas"
+                className="text-sm font-medium text-gray hover:text-navy border-b border-border hover:border-navy transition-colors pb-0.5 self-start md:self-auto"
+              >
+                Ver todas as áreas
+              </Link>
+            </div>
           </div>
-        </div>
+        </FadeIn>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
-          {areas.map((area) => (
-            <AreaCard key={area.slug} area={area} />
+          {areas.map((area, index) => (
+            <FadeIn key={area.slug} delay={index * 0.1}>
+              <AreaCard area={area} />
+            </FadeIn>
           ))}
         </div>
 
