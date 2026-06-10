@@ -1,0 +1,1 @@
+export { AreaServicos } from './AreaServicos'

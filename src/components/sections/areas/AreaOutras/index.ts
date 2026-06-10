@@ -1,0 +1,1 @@
+export { AreaOutras } from './AreaOutras'
