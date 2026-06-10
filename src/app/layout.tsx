@@ -3,6 +3,7 @@ import { Playfair_Display, Inter } from 'next/font/google'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import '@/styles/globals.css'
+import { WhatsAppButton } from '@/components/ui/FadeIn/WhatsAppButton'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -34,14 +35,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${playfair.variable} ${inter.variable}`}
-    >
+    <html lang="pt-BR" className={`${playfair.variable} ${inter.variable}`}>
       <body className="font-sans text-navy bg-white antialiased">
         <Header />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   )
