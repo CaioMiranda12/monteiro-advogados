@@ -1,0 +1,1 @@
+export { BlogArtigo } from './BlogArtigo'
