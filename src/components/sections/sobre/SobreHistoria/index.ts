@@ -1,0 +1,1 @@
+export { SobreHistoria } from './SobreHistoria'

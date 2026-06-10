@@ -1,0 +1,1 @@
+export { EquipeCTA } from './EquipeCTA'

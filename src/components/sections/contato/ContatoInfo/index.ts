@@ -1,0 +1,1 @@
+export { ContatoInfo } from './ContatoInfo'

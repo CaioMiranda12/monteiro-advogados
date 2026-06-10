@@ -1,0 +1,1 @@
+export { AreasContato } from './AreasContato'
