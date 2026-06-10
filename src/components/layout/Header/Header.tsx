@@ -7,6 +7,7 @@ import { NavLink } from './NavLink'
 import { MobileMenu } from './MobileMenu'
 
 const navItems = [
+  { label: 'Início', href: '/' },
   { label: 'Sobre', href: '/sobre' },
   { label: 'Áreas de Atuação', href: '/areas' },
   { label: 'Equipe', href: '/equipe' },
