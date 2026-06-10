@@ -25,7 +25,7 @@ export function AreasContato() {
                 Falar com um advogado
               </Link>
               <Link
-                href="https://wa.me/5511940002000"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center border border-white/20 text-white text-sm font-semibold px-8 py-4 rounded-sm hover:border-white/50 hover:bg-white/5 transition-colors duration-200"

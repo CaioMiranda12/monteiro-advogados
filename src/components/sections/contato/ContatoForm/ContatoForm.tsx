@@ -201,7 +201,7 @@ export function ContatoForm() {
                     label: 'WhatsApp',
                     content: (
                       <a
-                        href="https://wa.me/5511940002000"
+                        href="/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm text-navy hover:text-gold transition-colors"
@@ -251,7 +251,7 @@ export function ContatoForm() {
                   Atendimento imediato
                 </p>
                 <a
-                  href="https://wa.me/5511940002000"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center border border-navy/30 text-navy text-sm font-semibold px-8 py-4 rounded-sm hover:border-navy hover:bg-navy/5 transition-colors duration-200"

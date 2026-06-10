@@ -35,7 +35,7 @@ export function ContatoRapido() {
                   Agendar Consulta
                 </Link>
                 <a
-                  href="https://wa.me/5511940002000"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center border border-navy/30 text-navy text-sm font-medium px-8 py-5 rounded-sm hover:border-navy hover:bg-navy/5 transition-colors duration-200"
