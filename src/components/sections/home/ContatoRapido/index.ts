@@ -1,0 +1,1 @@
+export { ContatoRapido } from './ContatoRapido'

@@ -1,0 +1,1 @@
+export { AreasDestaque } from './AreasDestaque'
